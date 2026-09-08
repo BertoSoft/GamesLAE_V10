@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/backcolor"
+    style="@style/TarjetaMenu">
+    <!-- El estilo crema que creamos antes -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- Icono representativo del juego (ej: Euromillones, Primitiva...) -->
+        <ImageView
+            android:id="@+id/ivIcono"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/primitiva"
+            app:tint="@color/primario" />
+        <!-- Tintado automático en azul corporativo -->
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

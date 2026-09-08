@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores definidos por mi -->
+    <color name="primario">#0723C0</color>
+    <color name="secundario">#F0190A</color>
+    <color name="titulo">#2196F3</color>
+    <color name="backcolor">#F5C174</color>
+    <color name="fondo">#EBD4B1</color>
+
+
+
+</resources>
