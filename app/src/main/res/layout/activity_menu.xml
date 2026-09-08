@@ -21,13 +21,11 @@
             android:padding="8dp"
             android:orientation="vertical">
 
-            <TextView
+            <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                style="@style/TextoTitulo"
-                android:textColor="@color/primario"
-                android:layout_marginBottom="24sp"
-                android:text="Loterias SELAE"/>
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                android:layout_marginBottom="24sp"/>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
