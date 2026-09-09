@@ -44,6 +44,12 @@
         <item name="android:alignmentMode">alignBounds</item>
     </style>
 
+    <style name="Texto16Bold" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:alignmentMode">alignBounds</item>
+    </style>
 
 
 </resources>
