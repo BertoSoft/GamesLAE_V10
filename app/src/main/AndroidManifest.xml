@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GamesLAE">
         <activity
-            android:name=".Menu"
+            android:name=".modulos.home.ui.Home"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>

@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:background="@color/backcolor"
-    style="@style/TarjetaMenu">
+    style="@style/BolasPremio">
     <!-- El estilo crema que creamos antes -->
 
     <LinearLayout
@@ -60,13 +60,13 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6.5"/>
+                    android:layout_weight="5.5"/>
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"
+                    android:gravity="end"
                     android:textColor="@color/black"
                     android:text="C"
                     android:textStyle="bold"
@@ -75,7 +75,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.5"
                     android:gravity="center"
                     android:text="R"
                     android:textColor="@color/black"
@@ -92,64 +92,65 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvBola1"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
+                    android:layout_width="36dp"
+                    android:layout_height= "36dp"
+                    android:layout_margin="2dp"
                     style="@style/TarjetaMenu"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvBola2"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="2dp"
                     style="@style/TarjetaMenu"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvBola3"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="2dp"
                     style="@style/TarjetaMenu"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvBola4"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="2dp"
                     style="@style/TarjetaMenu"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvBola5"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="2dp"
                     style="@style/TarjetaMenu"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvBola6"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="2dp"
                     style="@style/TarjetaMenu"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvBola7"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="2dp"
                     style="@style/TarjetaMenu"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvBola8"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="2dp"
                     style="@style/TarjetaMenu"/>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/tvBola9"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight="1"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_margin="2dp"
                     style="@style/TarjetaMenu"/>
 
 

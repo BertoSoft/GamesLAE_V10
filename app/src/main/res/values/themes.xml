@@ -16,6 +16,11 @@
         <item name="rippleColor">?attr/colorControlHighlight</item>
     </style>
 
+    <style name="BolasPremio" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">36dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="rippleColor">?attr/colorControlHighlight</item>
+    </style>
 
 
     <!-- Estilo Texto -->
