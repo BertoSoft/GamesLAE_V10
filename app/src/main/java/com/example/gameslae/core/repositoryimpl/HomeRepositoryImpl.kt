@@ -9,7 +9,10 @@ class HomeRepositoryImpl@Inject constructor(
     private val remoteDataSource: RemoteDataSource
 ): HomeRepository {
 
-    override suspend fun getDatos(): String {
-        return remoteDataSource.fetchLoteriaRssBruto()
+    override suspend fun getDatosOnline(): Boolean {
+
+        val respuesta = remoteDataSource.getDatosOnline()
+
+        return true
     }
 }

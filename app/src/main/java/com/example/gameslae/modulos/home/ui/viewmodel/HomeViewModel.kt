@@ -33,11 +33,10 @@ class HomeViewModel@Inject constructor(
         }
         viewModelScope.launch {
             try {
-                val lista = usecase.getResultadosSorteosUseCase()
-                if(lista != emptyList<DatosHome>()){
+                val todoOk = usecase.getDatosOnlineUseCase()
+                if(todoOk){
                     _estado.update { estadoActual ->
                         estadoActual.copy(
-                            lista = lista,
                             msgError = null,
                             isCargando = false
                         )
@@ -46,7 +45,7 @@ class HomeViewModel@Inject constructor(
                 else{
                     _estado.update { estadoActual ->
                         estadoActual.copy(
-                            msgError = "Lista de Sorteos Vacía",
+                            msgError = "No se pudieron actualizar los datos...",
                             isCargando = false
                         )
                     }
