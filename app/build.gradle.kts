@@ -60,4 +60,7 @@ dependencies {
 
     // 📑 Conversor de texto plano para capturar el String gigante del RSS
     implementation("com.squareup.retrofit2:converter-scalars:2.11.0")
+
+    // 🌟 Conversor de Retrofit para usar GSON
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 }

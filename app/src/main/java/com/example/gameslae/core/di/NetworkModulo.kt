@@ -6,7 +6,9 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import okhttp3.OkHttpClient
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
 import javax.inject.Singleton
 
@@ -17,19 +19,31 @@ object NetworkModulo {
 
     @Provides
     @Singleton
-    fun provideRetrofit(): Retrofit {
+    fun provideOkHttpClient(): OkHttpClient {
+        return OkHttpClient.Builder()
+            .addInterceptor { chain ->
+                val request = chain.request().newBuilder()
+                    .addHeader("X-API-Key", "lat_f24d1567_a9bd20b28052db65d9d167658e7d61e93398658a0e49cb9f797279154010a739") // 🔑 Inserta aquí tu clave de acceso
+                    .addHeader("Content-Type", "application/json")
+                    .build()
+                chain.proceed(request)
+            }
+            .build()
+    }
+
+    @Provides
+    @Singleton
+    fun provideRetrofit(okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            // Ponemos la URL base oficial de Loterías del Estado
-            .baseUrl("https://www.loteriasyapuestas.es/")
-            // Añadimos el conversor de texto/XML que añadimos a Gradle
-            .addConverterFactory(ScalarsConverterFactory.create())
+            .baseUrl("https://api.loteriasapi.com/api/v1/") // 🌐 URL base del entorno de producción v1
+            .client(okHttpClient)
+            .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
 
     @Provides
     @Singleton
     fun provideApiService(retrofit: Retrofit): ApiService {
-        // Hilt usa la instancia de Retrofit de arriba para fabricar tu interfaz
         return retrofit.create(ApiService::class.java)
     }
 }

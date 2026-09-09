@@ -9,6 +9,14 @@ class HomeUseCase@Inject constructor(
 ) {
 
     suspend fun getResultadosSorteosUseCase(): List<DatosHome>{
-        return repository.getDatos()
+
+        val xml = repository.getDatos()
+
+
+
+
+
+
+        return emptyList<DatosHome>()
     }
 }
