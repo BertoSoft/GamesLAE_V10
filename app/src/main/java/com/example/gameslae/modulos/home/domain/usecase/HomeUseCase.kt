@@ -8,21 +8,7 @@ class HomeUseCase@Inject constructor(
     private val repository: HomeRepository
 ) {
 
-    suspend fun getDatosUltimosSorteosUseCase(): List<DatosHome>{
-
-        val xml = repository.getDatosUltimosSorteos()
-
-
-
-
-
-
-
-
-
-
-
-
-        return emptyList<DatosHome>()
+    suspend fun getDatosOnlineUseCase(): Boolean{
+        return repository.getDatosOnline()
     }
 }
