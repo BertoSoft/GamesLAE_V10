@@ -27,6 +27,15 @@
                 android:src="@drawable/logo"
                 android:layout_marginBottom="24sp"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextoBold"
+                android:textColor="@color/primario"
+                android:text="Resultados de los últimos sorteos SELAE"
+                android:layout_marginBottom="24dp"
+                android:background="@color/backcolor"/>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
