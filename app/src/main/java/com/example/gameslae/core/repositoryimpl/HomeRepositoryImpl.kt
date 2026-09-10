@@ -9,7 +9,15 @@ class HomeRepositoryImpl@Inject constructor(
     private val remoteDataSource: RemoteDataSource
 ): HomeRepository {
 
-    override suspend fun getDatos(): String {
-        return remoteDataSource.fetchLoteriaRssBruto()
+    override suspend fun getDatosUltimosSorteos(): List<DatosHome> {
+        val datosJson = remoteDataSource.getDatosUltimosSorteosDto()
+
+
+
+
+
+
+        val lista = emptyList<DatosHome>()
+        return lista
     }
 }
