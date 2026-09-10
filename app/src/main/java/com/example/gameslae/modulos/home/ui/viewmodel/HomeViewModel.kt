@@ -34,7 +34,7 @@ class HomeViewModel@Inject constructor(
         viewModelScope.launch {
             try {
                 val lista = usecase.getDatosUltimosSorteosUseCase()
-                if(lista != emptyList<DatosHome>()){
+                if(lista.isNotEmpty()){
                     _estado.update { estadoActual ->
                         estadoActual.copy(
                             lista = lista,

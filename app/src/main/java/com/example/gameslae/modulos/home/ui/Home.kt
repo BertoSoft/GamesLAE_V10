@@ -28,6 +28,7 @@ class Home : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
         initUi()
     }
 
@@ -51,7 +52,6 @@ class Home : AppCompatActivity() {
         with(binding.rvHome){
             layoutManager = LinearLayoutManager(this@Home)
             adapter = miAdaptador
-            setHasFixedSize(true)
         }
     }
 }

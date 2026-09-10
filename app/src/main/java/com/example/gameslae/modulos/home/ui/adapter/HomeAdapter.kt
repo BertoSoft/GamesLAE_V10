@@ -53,8 +53,10 @@ class HomeAdapter(
                     tvBola5.text = listaNumeros[4].toString()
                     tvBola6.text = listaNumeros[5].toString()
 
-                    tvBola8.text = listaNumeros[6].toString()
-                    tvBola9.text = listaNumeros[7].toString()
+                    // El complementario y reintegro van a las últimas bolas del XML
+                    tvBola8.text = datos.complementario?.toString() ?: "-"
+                    tvBola9.text = datos.reintegro?.toString() ?: "-"
+
                 }
             }
 
@@ -64,11 +66,14 @@ class HomeAdapter(
 
     companion object DiffCallback : DiffUtil.ItemCallback<DatosHome>() {
         override fun areItemsTheSame(oldItem: DatosHome, newItem: DatosHome): Boolean {
-            return oldItem.fecha == newItem.fecha
+            // 🌟 REPARADO: Usamos una comparación de punteros directa e infalible contra nulos.
+            // Si las instancias son idénticas en memoria, son el mismo item.
+            return oldItem === newItem
         }
 
         override fun areContentsTheSame(oldItem: DatosHome, newItem: DatosHome): Boolean {
-            return oldItem == newItem
+            // Comparamos el contenido de las variables estructurales de las data class
+            return oldItem.tipoSorteo == newItem.tipoSorteo && oldItem.fecha == newItem.fecha
         }
     }
 }

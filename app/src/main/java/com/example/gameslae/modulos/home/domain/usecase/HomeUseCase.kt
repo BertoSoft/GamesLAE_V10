@@ -7,7 +7,6 @@ import javax.inject.Inject
 class HomeUseCase@Inject constructor(
     private val repository: HomeRepository
 ) {
-
     suspend fun getDatosUltimosSorteosUseCase(): List<DatosHome>{
         return repository.getDatosUltimosSorteos()
     }

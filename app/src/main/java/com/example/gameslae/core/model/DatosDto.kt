@@ -16,7 +16,7 @@ data class DatosDto(
 
 data class ContenedorDto(
     val exito: Boolean,
-    val timestamp: String,
+    val timeStamp: String,
     val listaSorteos: List<DatosDto>
 )
 
@@ -35,9 +35,9 @@ data class ResultadosDto(
     @SerializedName("drawDate") val fecha: String,
     @SerializedName("dayOfWeek") val diaSemana: String,
     @SerializedName("status") val escrutinio: String,
-    @SerializedName("combination") val numeros: List<Int>,
+    @SerializedName("combination") val numeros: List<Double>,
     @SerializedName("resultData") val resulData: SuplementosDto,
-    @SerializedName("jackpotFormatted") val bote: String
+    @SerializedName("jackpotFormatted") val bote: String?
 )
 
 data class NombreDto(
@@ -46,7 +46,7 @@ data class NombreDto(
 )
 
 data class SuplementosDto(
-    @SerializedName("complementario") val complementario: Int?,
-    @SerializedName("reintegro") val reintegro: Int?,
-    @SerializedName("estrellas") val estrellas: List<Int>?
+    @SerializedName("complementario") val complementario: Double?,
+    @SerializedName("reintegro") val reintegro: Double?,
+    @SerializedName("estrellas") val estrellas: List<Double>?
 )

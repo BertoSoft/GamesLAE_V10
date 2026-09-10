@@ -7,6 +7,6 @@ import retrofit2.http.GET
 interface ApiService {
 
     // 🌟 Endpoint oficial de Loterías API para los últimos resultados de la Primitiva
-    @GET("results/primitiva/latest")
+    @GET("results/latest")
     suspend fun getResultadosRss(): Response<ResponseBody>
 }

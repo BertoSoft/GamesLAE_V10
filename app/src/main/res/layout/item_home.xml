@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:background="@color/backcolor"
-    style="@style/BolasPremio">
+    android:background="@color/backcolor">
     <!-- El estilo crema que creamos antes -->
 
     <LinearLayout
@@ -28,8 +27,7 @@
         <!-- Layout de datos del sorteo-->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <!-- Fecha -->
